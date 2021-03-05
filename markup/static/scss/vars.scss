@@ -1,0 +1,56 @@
+$black-color: #000000;
+$blue-color: #5F73F1;
+$blue-hover-color: #4659CF;
+$blue-color2: #72C4FE;
+
+$light-blue-color: #86D8FE;
+$light-blue-color2: #CBD2FF;
+
+$yellow-color: #F8D881;
+$green-color: #AEDCBF;
+$brown-color: #464646;
+
+$purple-color: #B297F4;
+$purple-color2: #F0C7D5;
+
+$pink-color: #FF95A1;
+$pink-color2: #FFB39C;
+
+$white-color: #ffffff;
+$gray-color: #EFEFEF;
+$gray-color2: #F2F6FA;
+$light-gray-color: #F6F6F6;
+$dark-gray: #747474;
+$dirty-gray: #91ABCE;
+
+$font-Montserrat: 'Montserrat', sans-serif;
+
+%text10 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+%text12 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+%text14 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+%text16 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+%text18 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}

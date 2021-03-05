@@ -1,0 +1,69 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+@mixin full {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin full-img {
+    @include full;
+    object-fit: cover;
+}
+
+@mixin img-contain {
+    @include full;
+    object-fit: contain;
+}
+
+@mixin p-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin center {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+@mixin before {
+    content: '';
+    display: block;
+}
+
+@function get-vw($target) {
+    $vw-context: (1440 * 0.01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+}

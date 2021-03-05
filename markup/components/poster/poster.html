@@ -1,0 +1,357 @@
+{{> header/header-page}}
+
+<div class="top-filter poster-cat-filter">
+    <div class="container">
+        <div class="top-filter__slider">
+            <div class="swiper-container top-filter-swiper">
+                <div class="swiper-wrapper">
+                    {{#each filterSwiper.data}}
+                    <div class="swiper-slide">
+                        <div class="top-filter__checkbox">
+                            <input type="checkbox" name="filter" id="item-filter{{this.id}}">
+                            <label for="item-filter{{this.id}}">
+                                <div class="top-filter__checkbox-icon">
+                                    <img src="static/img/content/poster-cat/{{this.img}}" alt="">
+                                </div>
+                                <p>{{this.text}}</p>
+                            </label>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="swiper-button-prev top-filter-prev"></div>
+            <div class="swiper-button-next top-filter-next"></div>
+        </div>
+    </div>
+</div>
+
+<div class="top-filter-min">
+    <div class="top-filter-min__wrap">
+        <a href="javascript:void(0)" class="top-filter-min__item">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon1.svg" alt="">
+            </div>
+            Онлайн
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon2.svg" alt="">
+            </div>
+            Кино
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon3.svg" alt="">
+            </div>
+            Концерты
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon4.svg" alt="">
+            </div>
+            Вечеринки
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+            </div>
+            Спектакли
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item hide">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+            </div>
+            Спектакли
+        </a>
+        <a href="javascript:void(0)" class="min-menu__item hide">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+            </div>
+            Спектакли
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item hide">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+            </div>
+            Спектакли
+        </a>
+        <a href="javascript:void(0)" class="top-filter-min__item top-filter-min__item-more">
+            <div class="top-filter-min__item--icon">
+                <img src="static/img/content/min-menu/icon-more-white.svg" alt="">
+            </div>
+            Ещё
+        </a>
+    </div>
+</div>
+
+<div class="filter-calendar">
+    <div class="container">
+        <div class="filter-calendar__slider">
+        </div>
+    </div>
+</div>
+
+<div class="poster-block">
+    <div class="container">
+        <div class="poster-block__header">
+            <h3>ФИЛЬМЫ</h3>
+
+            <div class="poster-block__tabs">
+                <div class="poster-block__tabs-item active">Сегодня</div>
+                <div class="poster-block__tabs-item">Популярное</div>
+                <div class="poster-block__tabs-item">Скоро</div>
+                <div class="poster-block__tabs-item">По заведению</div>
+            </div>
+
+            <a href="#" class="poster-block__all">Все <span></span></a>
+        </div>
+
+
+        <div class="poster-block__slider">
+            <div class="swiper-container poster-block-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Душа</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля</div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster2.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Ещё по одной</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster2.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Серебряные коньки</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Последний богатырь:
+                                    Корень зла
+                                </h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/photo1.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Огонь</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev poster-block-prev"></div>
+            <div class="swiper-button-next poster-block-next"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="poster-block">
+    <div class="container">
+        <div class="poster-block__header">
+            <h3>КОНЦЕРТЫ</h3>
+
+            <div class="poster-block__tabs">
+                <div class="poster-block__tabs-item active">Сегодня</div>
+                <div class="poster-block__tabs-item">Популярное</div>
+                <div class="poster-block__tabs-item">Скоро</div>
+                <div class="poster-block__tabs-item">По заведению</div>
+            </div>
+
+            <a href="#" class="poster-block__all">Все <span></span></a>
+        </div>
+
+
+        <div class="poster-block__slider">
+            <div class="swiper-container poster-block-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Душа</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля</div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster2.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Ещё по одной</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster2.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Серебряные коньки</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/poster.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Последний богатырь:
+                                    Корень зла
+                                </h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="poster-cat-item">
+                            <div class="poster-cat-item__image">
+                                <img src="static/img/content/photo1.png" alt="">
+
+                                <div class="poster-cat-item__ticket">
+                                    <img src="static/img/content/icon-ticket-big.svg" alt="">
+                                    <p>КУПИТЬ БИЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="poster-cat-item__info">
+                                <h5>Огонь</h5>
+                                <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                </div>
+                                <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00
+                                    руб.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev poster-block-prev"></div>
+            <div class="swiper-button-next poster-block-next"></div>
+        </div>
+    </div>
+</div>

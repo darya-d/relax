@@ -1,0 +1,125 @@
+.cat-link {
+    margin-bottom: 120px;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 100px;
+    }
+    @media screen and (max-width: 992px) {
+        margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        @extend %text14;
+        color: #464646;
+        margin-bottom: 77px;
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 35px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .row {
+        @media screen and (max-width: 992px) {
+            margin: 0 -8px;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 0 -10px;
+        }
+    }
+
+    .col-4 {
+        @media screen and (max-width: 992px) {
+            padding: 0 8px;
+        }
+    }
+
+    .col-2 {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    &__item {
+        display: block;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $gray-color;
+        margin-bottom: 24px;
+        border: none;
+        transition: all 0.25s;
+
+        @media screen and (max-width: 992px) {
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+            @include p-absolute;
+            @include full-img;
+            @include center;
+            transition: all 0.25s;
+        }
+    }
+
+    &__long {
+        padding-bottom: 135.75%;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        @media screen and (max-width: 768px) {
+            padding-bottom: 130%;
+        }
+    }
+
+    &__min {
+        padding-bottom: 62.75%;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 100%;
+        }
+    }
+
+    &__lg {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__sm {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+}

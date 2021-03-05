@@ -1,0 +1,89 @@
+.poster-block {
+    padding-top: 45px;
+    padding-bottom: 55px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h3 {
+            flex-shrink: 0;
+            @extend %text14;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: $brown-color;
+            margin-right: 30px;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &-item {
+            margin-right: 20px;
+            @extend %text14;
+            line-height: 20px;
+            padding: 10px 20px;
+            text-align: center;
+            background: #DFE3FC;
+            border-radius: 30px;
+            color: #B1B7DE;
+            transition: all 0.25s;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            &:hover {
+                background-color: $blue-color;
+                color: $white-color;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                background-color: $blue-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &__all {
+        margin-right: 0;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        @extend %text14;
+        color: $brown-color;
+        text-decoration: none;
+        transition: all 0.25s;
+
+        &:hover {
+            color: $blue-color;
+            text-decoration: none;
+        }
+
+        span {
+            display: block;
+            margin-left: 14px;
+            @include bg-svg($arrow-more);
+            transform: rotate(-90deg);
+            flex-shrink: 0;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        .swiper-slide {
+            width: 226px;
+        }
+    }
+
+    &-prev, &-next {
+        display: none;
+    }
+}

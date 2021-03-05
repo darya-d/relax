@@ -1,0 +1,360 @@
+.main-map {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+
+    &.active {
+        .places-nav {
+            display: block;
+        }
+
+        .second-map-menu {
+            display: flex;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        height: 86px;
+        background-color: $gray-color;
+        position: relative;
+        width: 100%;
+        z-index: 5;
+        padding-right: calc((100% - 1240px) / 2);
+
+        &--btn {
+            width: 240px;
+            flex-shrink: 0;
+            margin-right: 86px;
+            background: $blue-color;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 40px 0 0;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.09);
+            cursor: pointer;
+
+            &:hover {
+                span {
+                    opacity: 1;
+                }
+            }
+
+            span {
+                height: 43px;
+                width: 43px;
+                border-radius: 50%;
+                background: #5F73F1;
+                border: 1px solid $white-color;
+                position: absolute;
+                transition: all 0.25s;
+                opacity: 0.5;
+
+                &:after {
+                    @include before;
+                    @include p-absolute;
+                    @include center;
+                    top: 3px;
+                    height: 7px;
+                    width: 7px;
+                    border-top: 1px solid $white-color;
+                    border-left: 1px solid $white-color;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        p {
+            @extend %text14;
+            color: #B2B2B2;
+            margin-bottom: 0;
+        }
+    }
+
+    &__soc {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 7px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        li a {
+            display: block;
+            transition: all 0.25s;
+            opacity: 0.3;
+            width: 34px;
+            height: 34px;
+
+            .icon {
+                display: block;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.icon-facebook-f {
+    @include bg-svg($icon-facebook-f);
+}
+
+.icon-twitter-f {
+    @include bg-svg($icon-twitter-f);
+}
+
+.icon-insta-f {
+    @include bg-svg($icon-insta-f);
+}
+
+.places-nav {
+    position: relative;
+    width: 240px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.places-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $white-color;
+    border-radius: 0 40px 0 0;
+
+    li {
+    }
+
+    & > li > a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue-color;
+        height: 80px;
+        padding: 0 39px;
+        cursor: pointer;
+        transition: all 0.25s;
+        position: relative;
+
+        &:after, &:before {
+            @include before;
+            position: absolute;
+        }
+
+        &:after {
+            width: 161px;
+            height: 0;
+            bottom: 0;
+            left: 39px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        &:before {
+            width: 26px;
+            height: 64px;
+            top: 0;
+            bottom: 0;
+            right: -25.5px;
+            margin: auto;
+            background-image: url("../img/content/right-btn-arrow.svg");
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.25s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover {
+            background-color: $blue-color;
+            color: $white-color;
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .map-icon1 {
+                @include bg-svg($map-icon1-hover);
+            }
+
+            .map-icon2 {
+                @include bg-svg($map-icon2-hover);
+            }
+
+            .map-icon3 {
+                @include bg-svg($map-icon3-hover);
+            }
+
+            .map-icon4 {
+                @include bg-svg($map-icon4-hover);
+            }
+
+            .map-icon5 {
+                @include bg-svg($map-icon5-hover);
+            }
+
+            .map-icon6 {
+                @include bg-svg($map-icon6-hover);
+            }
+
+            .map-icon7 {
+                @include bg-svg($map-icon7-hover);
+            }
+
+            .map-icon8 {
+                @include bg-svg($map-icon8-hover);
+            }
+
+            .map-icon9 {
+                @include bg-svg($map-icon9-hover);
+            }
+
+            .map-icon10 {
+                @include bg-svg($map-icon10-hover);
+            }
+
+            .map-icon11 {
+                @include bg-svg($map-icon11-hover);
+            }
+        }
+
+        .icon {
+            width: 35px !important;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.second-map-menu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.25s;
+    transform: translateX(-700px);
+    display: none;
+
+    &.active {
+        transform: translateX(210px);
+    }
+
+    &__image {
+        width: 280px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            @include p-absolute;
+            @include full-img;
+        }
+    }
+
+    &__list {
+        width: 240px;
+        background-color: #CBD2FF;
+        border-radius: 0 40px 0 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            padding: 0 40px;
+            text-decoration: none;
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.25s;
+
+            &:after, &:before {
+                @include before;
+                position: absolute;
+            }
+
+            &:after {
+                left: 40px;
+                bottom: 0;
+                width: 160px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+            }
+
+            &:hover {
+                text-decoration: none;
+                background-color: $white-color;
+            }
+
+            p {
+                @extend %text14;
+                color: $blue-color;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/*menu-icon*/
+.map-icon1 {
+    @include bg-svg($map-icon1);
+}
+
+.map-icon2 {
+    @include bg-svg($map-icon2);
+}
+
+.map-icon3 {
+    @include bg-svg($map-icon3);
+}
+
+.map-icon4 {
+    @include bg-svg($map-icon4);
+}
+
+.map-icon5 {
+    @include bg-svg($map-icon5);
+}
+
+.map-icon6 {
+    @include bg-svg($map-icon6);
+}
+
+.map-icon7 {
+    @include bg-svg($map-icon7);
+}
+
+.map-icon8 {
+    @include bg-svg($map-icon8);
+}
+
+.map-icon9 {
+    @include bg-svg($map-icon9);
+}
+
+.map-icon10 {
+    @include bg-svg($map-icon10);
+}
+
+.map-icon11 {
+    @include bg-svg($map-icon11);
+}

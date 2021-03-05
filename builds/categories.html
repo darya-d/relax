@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=370, initial-scale=1">
+
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body>
+
+
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header-page__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <a href="index.html" class="header__logo" title="logo">Логотип</a>
+
+                    <div class="header__select-town">
+                        <select class="select2" style="width: 100%">
+                            <option>Минск</option>
+                            <option>Брест</option>
+                            <option>Вильнюс</option>
+                            <option>Витебск</option>
+                            <option>Гомель</option>
+                            <option>Гродно</option>
+                            <option>Могилев</option>
+                            <option>Барановичи</option>
+                            <option>Береза</option>
+                            <option>Бобруйск</option>
+                            <option>Борисов</option>
+                            <option>Волковыск</option>
+                            <option>Городок</option>
+                        </select>
+                    </div>
+
+                    <div class="header__search">
+                        <label class="icon-search" for="search"></label>
+                        <input type="text" placeholder="Поиск мест и событий" name="" id="search">
+                    </div>
+
+                    <a href="#" class="header__link-icon">
+                        <span class="icon-weather"></span>
+                    </a>
+
+                    <a href="#" class="header__link-icon">
+                        <span class="icon-header"></span>
+                    </a>
+
+                    <a href="login.html" class="header__link">Вход на сайт</a>
+
+                    <div class="dropdown header__lk">
+                        <div class="dropdown-btn header__lk--btn">
+                            <div class="header__lk--ava">ИФ</div>
+                            <p>Имя Фамилия</p>
+                            <span class="dropdown-arrow"></span>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a href="#" class="active"><span class="icon icon-person"></span>Профиль</a>
+                            <a href="#"><span class="icon icon-outline"></span>Избранное</a>
+                            <a href="#"><span class="icon icon-calendar"></span>Бронирование</a>
+                            <div class="dropdown-separator"></div>
+                            <a href="#"><span class="icon icon-sign-out"></span>Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="cat">
+            <div class="cat__map"></div>
+
+            <div class="cat__main">
+                <div class="cat__header">
+                    <div class="cat__header--content">
+                        <h2>SPA в Минске <span>192</span></h2>
+
+                        <div class="tabs-switch">
+                            <div class="tabs-switch__item active">Все места</div>
+                            <div class="tabs-switch__item">С онлайн-записью</div>
+                        </div>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Антицеллюлитная программа</div>
+                            <div class="tab-text">Стоун-терапия</div>
+                            <div class="tab-text">Тайский SPA</div>
+                            <div class="tab-text">SPA для лица</div>
+                            <div class="tab-text">Флоатинг</div>
+                        </div>
+                    </div>
+
+                    <div class="card-header__menu">
+                        <a href="#" class="card-header__menu--item">
+                            <span class="icon icon-nearly"></span>
+                            рядом со мной
+                        </a>
+
+                        <a href="#" class="card-header__menu--item">
+                            <span class="icon icon-location"></span>
+                            расположение
+                        </a>
+
+                        <a href="#" class="card-header__menu--item">
+                            <span class="icon icon-clock-blue"></span>
+                            ВРЕМЯ РАБОТЫ
+                        </a>
+
+                        <a href="#" class="card-header__menu--item">
+                            <span class="icon icon-filter"></span>
+                            ВСЕ ФИЛЬТРЫ
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cat-item">
+                    <div class="cat-item__content cat-item__header">
+                        <h5>CТУДИЯ КРАСОТЫ</h5>
+                        <h4>BellaNika</h4>
+                    </div>
+
+                    <div class="cat-item__photos">
+                        <div class="cat-item__photos-slider">
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo1.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo2.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo3.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo1.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__content">
+                        <p>Студия красоты с уникальным симбиозом безупречного сервиса и высоких стандартов качества предоставляемых услуг</p>
+
+                        <div class="cat-item__specialists">
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe1.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe2.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe1.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__price">
+                        <div class="cat-item__price-slider">
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__content">
+                        <div class="cat-item__services">
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Задать вопрос</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Записаться</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Все цены</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Скидки</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Новости</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Сертификаты</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Услуги</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>277 отзывов</p>
+                            </div>
+
+                            <div class="tab-more">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-item">
+                    <div class="cat-item__content cat-item__header">
+                        <h5>CТУДИЯ КРАСОТЫ</h5>
+                        <h4>BellaNika</h4>
+                    </div>
+
+                    <div class="cat-item__photos">
+                        <div class="cat-item__photos-slider">
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo1.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo2.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo3.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo1.png" alt="">
+                            </div>
+
+                            <div class="cat-item__photos--image">
+                                <img src="static/img/content/photo2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__content">
+                        <p>Студия красоты с уникальным симбиозом безупречного сервиса и высоких стандартов качества предоставляемых услуг</p>
+
+                        <div class="cat-item__specialists">
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe1.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe2.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe1.png">
+                            </div>
+                            <div class="cat-item__specialists--item">
+                                <img src="static/img/content/spe2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__price">
+                        <div class="cat-item__price-slider">
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+
+                            <div class="cat-item__price--item price-sale">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">
+                                    <span>-70%</span>
+                                    120 руб.
+                                </div>
+                            </div>
+
+                            <div class="cat-item__price--item price-sale">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">
+                                    <span>-70%</span>
+                                    120 руб.
+                                </div>
+                            </div>
+
+                            <div class="cat-item__price--item price-sale">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">
+                                    <span>-70%</span>
+                                    120 руб.
+                                </div>
+                            </div>
+
+                            <div class="cat-item__price--item">
+                                <p>Шоколадное обертывание</p>
+                                <div class="cat-item__price--sum">120 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-item__content">
+                        <div class="cat-item__services">
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Задать вопрос</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Записаться</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Все цены</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Скидки</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Новости</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Сертификаты</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>Услуги</p>
+                            </div>
+
+                            <div class="tab-info">
+                                <div class="tab-info__icon">
+                                    <span class="icon icon-question"></span>
+                                </div>
+                                <p>277 отзывов</p>
+                            </div>
+
+                            <div class="tab-more">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter active">
+                <div class="filter__header">
+                    <h3>Все фильтры</h3>
+
+                    <div class="filter__close"></div>
+                </div>
+
+                <div class="filter__body">
+                    <div class="custom-switch">
+                        <input type="checkbox" class="custom-switch-input" id="switch3">
+
+                        <label class="custom-switch-label" for="switch3">
+                            <span class="text">Рядом со мной</span>
+                        </label>
+                    </div>
+
+                    <div class="filter__select">
+                        <div class="filter__select--header">Рядом с <span></span>
+                        </div>
+                        <div class="filter__select--body">
+                            <div class="filter__select--option">Невыбрано</div>
+                            <div class="filter__select--option">Гум</div>
+                            <div class="filter__select--option">Ботанический сад</div>
+                            <div class="filter__select--option">Комаровка</div>
+                            <div class="filter__select--option">Лебяжий</div>
+                            <div class="filter__select--option">Логойск</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__select">
+                        <div class="filter__select--header">Метро <span></span>
+                        </div>
+                        <div class="filter__select--body">
+                            <div class="filter__select--option">Невыбрано</div>
+                            <div class="filter__select--option">Лубянка</div>
+                            <div class="filter__select--option">Ботанический сад</div>
+                            <div class="filter__select--option">Метро 1</div>
+                            <div class="filter__select--option">Метро 2</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__select">
+                        <div class="filter__select--header">Район <span></span>
+                        </div>
+                        <div class="filter__select--body">
+                            <div class="filter__select--option">Невыбрано</div>
+                            <div class="filter__select--option">Гум</div>
+                            <div class="filter__select--option">Ботанический сад</div>
+                            <div class="filter__select--option">Комаровка</div>
+                            <div class="filter__select--option">Лебяжий</div>
+                            <div class="filter__select--option">Логойск</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__select">
+                        <div class="filter__select--header">Микрорайон <span></span>
+                        </div>
+                        <div class="filter__select--body">
+                            <div class="filter__select--option">Брилевичи</div>
+                            <div class="filter__select--option">Гум</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__select">
+                        <div class="filter__select--header">Время работы <span></span>
+                        </div>
+                        <div class="filter__select--body">
+                            <div class="filter__select--option">до обеда</div>
+                            <div class="filter__select--option">после обеда</div>
+                        </div>
+                    </div>
+
+                    <div class="custom-switch">
+                        <input type="checkbox" class="custom-switch-input" id="switch4">
+
+                        <label class="custom-switch-label" for="switch4">
+                            <span class="text">Карта Халва</span>
+                        </label>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>Для кого</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Для беременных и после родов</div>
+                            <div class="tab-text">Для двоих</div>
+                            <div class="tab-text">Для детей</div>
+                            <div class="tab-text">Для женщин</div>
+                            <div class="tab-text">Для мужчин</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>SPA</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">LPG-процедуры</div>
+                            <div class="tab-text">SPA для двоих</div>
+                            <div class="tab-text">SPA для лица</div>
+                            <div class="tab-text">SPA для похудения</div>
+                            <div class="tab-text">SPA для тела</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>Массаж</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Антицеллюлитный</div>
+                            <div class="tab-text">Детский</div>
+                            <div class="tab-text">Биомеханическая стимуляция</div>
+                            <div class="tab-text">Испанский</div>
+                            <div class="tab-text">Медовый</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>Уход за лицом</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Визаж</div>
+                            <div class="tab-text">Аппаратная косметология</div>
+                            <div class="tab-text">Инъекционная косметология</div>
+                            <div class="tab-text">Классическая косметология</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>Уход за руками и ногами</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Дизайн</div>
+                            <div class="tab-text">Маникюр</div>
+                            <div class="tab-text">Педикюр</div>
+                            <div class="tab-text">Наращивание и коррекция ногтей</div>
+                            <div class="tab-text">Покрытие</div>
+                        </div>
+                    </div>
+
+                    <div class="filter__block">
+                        <h5>Дополнительно</h5>
+
+                        <div class="tabs-wrap">
+                            <div class="tab-text">Визаж</div>
+                            <div class="tab-text">Лазерный центр</div>
+                            <div class="tab-text">Парикмахерский зал для мужчин</div>
+                            <div class="tab-text">Парикмахерский зал для женщин</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-switch">
+                    <input type="checkbox" class="custom-switch-input" id="switch">
+
+                    <label class="custom-switch-label" for="switch">
+                        <span class="text">Онлайн запись</span>
+                    </label>
+                </div>
+
+                <div class="custom-switch">
+                    <input type="checkbox" class="custom-switch-input" id="switch2" checked="checked">
+
+                    <label class="custom-switch-label" for="switch2">
+                        <span class="text">Поиск по карте</span>
+                    </label>
+                </div>
+
+                <div class="filter__footer">
+                    <div class="tabs-switch">
+                        <div class="tabs-switch__item active">Сбросить</div>
+                        <div class="tabs-switch__item">Показать 209</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="static/js/main.min.js"></script>
+    </body>
+
+</html>

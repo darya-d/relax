@@ -1,0 +1,719 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=370, initial-scale=1">
+
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body>
+
+
+        <header class="header-page">
+            <div class="container">
+                <div class="header-page__wrap">
+                    <div class="header-page__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <a href="index.html" class="header-page__logo" title="logo">Логотип</a>
+
+                    <div class="header-page__min-local"></div>
+
+                    <ul class="header-page__menu">
+                        <li><a href="javascript:void(0)" class="has-child" data-sub-menu="">КАТАЛОГ</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="has-child" data-sub-menu="">АФИША</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="has-child" data-sub-menu="">СКИДКИ</a>
+                        </li>
+                        <li><a href="javascript:void(0)" data-sub-menu="">ЖУРНАЛ</a>
+                        </li>
+                        <li><a href="javascript:void(0)" data-sub-menu="">ФОТООТЧЕТЫ</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-page__search">
+                        <label class="icon-search" for="search"></label>
+                        <input type="text" placeholder="Поиск мест и событий" name="" id="search">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-slider" id="menu-cat"></div>
+        <div class="menu-slider" id="menu-poster"></div>
+        <div class="menu-slider" id="menu-sale"></div>
+
+        <div class="top-filter poster-cat-filter">
+            <div class="container">
+                <div class="top-filter__slider">
+                    <div class="swiper-container top-filter-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter1">
+                                    <label for="item-filter1">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon1.svg" alt="">
+                                        </div>
+                                        <p>Онлайн</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter2">
+                                    <label for="item-filter2">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon2.svg" alt="">
+                                        </div>
+                                        <p>Кино</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter3">
+                                    <label for="item-filter3">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon3.svg" alt="">
+                                        </div>
+                                        <p>Концерты</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter4">
+                                    <label for="item-filter4">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon4.svg" alt="">
+                                        </div>
+                                        <p>Вечеринки</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter5">
+                                    <label for="item-filter5">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon5.svg" alt="">
+                                        </div>
+                                        <p>Спектакли</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter6">
+                                    <label for="item-filter6">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon6.svg" alt="">
+                                        </div>
+                                        <p>Выставки</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter7">
+                                    <label for="item-filter7">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon7.svg" alt="">
+                                        </div>
+                                        <p>Обучение</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter8">
+                                    <label for="item-filter8">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon8.svg" alt="">
+                                        </div>
+                                        <p>События</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter9">
+                                    <label for="item-filter9">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon9.svg" alt="">
+                                        </div>
+                                        <p>Cпорт</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter10">
+                                    <label for="item-filter10">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon10.svg" alt="">
+                                        </div>
+                                        <p>Бесплатные мероприятия
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter11">
+                                    <label for="item-filter11">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon11.svg" alt="">
+                                        </div>
+                                        <p>Квесты</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter12">
+                                    <label for="item-filter12">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon12.svg" alt="">
+                                        </div>
+                                        <p>Цирк</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter13">
+                                    <label for="item-filter13">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon13.svg" alt="">
+                                        </div>
+                                        <p>Новый год</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter14">
+                                    <label for="item-filter14">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon14.svg" alt="">
+                                        </div>
+                                        <p>Детская афиша
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-filter__checkbox">
+                                    <input type="checkbox" name="filter" id="item-filter15">
+                                    <label for="item-filter15">
+                                        <div class="top-filter__checkbox-icon">
+                                            <img src="static/img/content/poster-cat/icon15.svg" alt="">
+                                        </div>
+                                        <p>IT афиша</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev top-filter-prev"></div>
+                    <div class="swiper-button-next top-filter-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-filter-min">
+            <div class="top-filter-min__wrap">
+                <a href="javascript:void(0)" class="top-filter-min__item">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon1.svg" alt="">
+                    </div>
+                    Онлайн
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon2.svg" alt="">
+                    </div>
+                    Кино
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon3.svg" alt="">
+                    </div>
+                    Концерты
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon4.svg" alt="">
+                    </div>
+                    Вечеринки
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+                    </div>
+                    Спектакли
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item hide">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+                    </div>
+                    Спектакли
+                </a>
+                <a href="javascript:void(0)" class="min-menu__item hide">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+                    </div>
+                    Спектакли
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item hide">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/min-menu-icon5.svg" alt="">
+                    </div>
+                    Спектакли
+                </a>
+                <a href="javascript:void(0)" class="top-filter-min__item top-filter-min__item-more">
+                    <div class="top-filter-min__item--icon">
+                        <img src="static/img/content/min-menu/icon-more-white.svg" alt="">
+                    </div>
+                    Ещё
+                </a>
+            </div>
+        </div>
+
+        <div class="filter-second">
+            <div class="container">
+                <div class="filter-second__wrap">
+                    <div class="filter-second__item">
+
+                    </div>
+                    <div class="filter-second__item">
+                        <div class="filter-second__checkbox">
+                            <input type="checkbox" name="children" id="children">
+                            <label for="children">
+                                <div class="filter-second__checkbox-icon">
+                                    <img src="static/img/content/poster-cat/filter2-2.svg" alt="">
+                                </div>
+                                <p>ДЕТЯМ</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-second__item"></div>
+
+                    <div class="filter-second__item">
+                        <div class="filter-second__checkbox">
+                            <input type="checkbox" name="3dfilm" id="3dfilm">
+                            <label for="3dfilm">
+                                <div class="filter-second__checkbox-icon">
+                                    <img src="static/img/content/poster-cat/filter2-4.svg" alt="">
+                                </div>
+                                <p>3D КИНО</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-second__item"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="poster-cat">
+            <div class="container">
+                <div class="poster-cat-tabs">
+                    <div class="poster-cat-tabs__list">
+                        <a href="javascript:void(0)" class="poster-cat-tabs__list-item active" data-tab="#tab1">ВСЕ</a>
+                        <a href="javascript:void(0)" data-tab="#tab2" class="poster-cat-tabs__list-item">ЛИСТАПАД</a>
+                    </div>
+
+                    <div class="poster-cat-tabs__content">
+                        <div class="poster-cat-tabs__item active" id="tab1">
+                            <div class="poster-cat-tabs__slider">
+                                <div class="swiper-container poster-cat-swiper">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Душа</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster2.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Ещё по одной</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster2.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Серебряные коньки</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Последний богатырь:
+                                                Корень зла
+                                            </h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/photo1.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Огонь</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Душа</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster2.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Ещё по одной</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster2.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Серебряные коньки</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/poster.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Последний богатырь:
+                                                Корень зла
+                                            </h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="poster-cat-item">
+                                                <div class="poster-cat-item__image">
+                                                    <img src="static/img/content/photo1.png" alt="">
+                                                </div>
+                                                <div class="poster-cat-item__info">
+                                                    <h5>Огонь</h5>
+                                                    <div class="poster-cat-item__date"><span class="icon"></span>по 4 февраля
+                                                    </div>
+                                                    <div class="poster-cat-item__price"><span class="icon"></span>2.50 - 25.00 руб.
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next poster-cat-next"></div>
+                                <div class="swiper-button-prev poster-cat-prev"></div>
+                            </div>
+                        </div>
+
+                        <div class="poster-cat-tabs__item" id="tab2"></div>
+                    </div>
+                </div>
+
+                <div class="film-schedule">
+                    <div class="film-schedule__date">25 ЯНВАРЯ, СЕГОДНЯ, ПОНЕДЕЛЬНИК</div>
+
+                    <div class="film-schedule__block">
+                        <div class="film-schedule__cinema">VOKA CINEMA</div>
+
+                        <div class="film-schedule__list">
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Душа</h5>
+                                    <p>мультфильм; США 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table film-3d">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Душа</h5>
+                                    <p>мультфильм; США 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Небеса подождут</h5>
+                                    <p>мелодрама, комедия; Германия 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table film-3d">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Небеса подождут</h5>
+                                    <p>мелодрама, комедия; Германия 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Не лечи меня</h5>
+                                    <p>комедия; Россия 2019</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film-schedule__block">
+                        <div class="film-schedule__cinema">Silver Screen
+                            <br>(ТЦ Galileo)
+                        </div>
+
+                        <div class="film-schedule__list">
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Душа</h5>
+                                    <p>мультфильм; США 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table film-3d">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Душа</h5>
+                                    <p>мультфильм; США 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Небеса подождут</h5>
+                                    <p>мелодрама, комедия; Германия 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table film-3d">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Небеса подождут</h5>
+                                    <p>мелодрама, комедия; Германия 2020</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+
+                            <div class="film-schedule__table">
+                                <div class="film-schedule__table-col1">
+                                    <h5>Не лечи меня</h5>
+                                    <p>комедия; Россия 2019</p>
+                                </div>
+                                <div class="film-schedule__table-col2">
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">11:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">12:10</div>
+                                    <div class="film-schedule__table-time" data-price="8.00 руб.">14:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">16:10</div>
+                                    <div class="film-schedule__table-time" data-price="10.00 руб.">17:10</div>
+                                    <div class="film-schedule__table-time" data-price="7.00 руб.">18:10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="static/js/main.min.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,201 @@
+.filter {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 390px;
+    z-index: 10;
+    border-radius: 40px 0 0 40px;
+    box-shadow: 15px 15px 60px rgba(0,0,0,0.1);
+    transition: all 0.25s;
+
+    &.active {
+        right: 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 18px 35px 10px 60px;
+        justify-content: space-between;
+        background-color: $blue-color;
+        border-radius: 40px 0 0 0;
+
+        h3 {
+            @extend %text18;
+            color: $white-color;
+            margin-bottom: 0;
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        flex-shrink: 0;
+        @include bg-svg($filter-close);
+    }
+
+    &__select {
+        $f: &;
+
+        &.active {
+            #{$f}--header {
+            }
+
+            #{$f}--body {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #{$f}--option {
+                display: block;
+            }
+        }
+
+        &--header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @extend %text14;
+            color: $dark-gray;
+            padding: 10px 45px 10px 60px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(149, 149, 149, 0.1);
+
+            span {
+                display: block;
+                flex-shrink: 0;
+                @include bg-svg($arrow-filter);
+            }
+        }
+
+        &--body {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &--option {
+            padding: 10px 45px 10px 60px;
+            @extend %text14;
+            color: $dark-gray;
+            background-color: #E2E6FC;
+            transition: all 0.25s;
+            display: none;
+            border-bottom: 1px solid rgba(149, 149, 149, 0.1);
+            cursor: pointer;
+
+            &:hover, &.active {
+                background-color: $blue-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &__block {
+        padding: 7px 38px 7px 45px;
+        border-bottom: 1px solid rgba(149, 149, 149, 0.1);
+
+        h5 {
+            padding: 0 0 0 15px;
+            @extend %text14;
+            color: $blue-color;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .tab-text {
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover {
+                background: rgba(95, 115, 241, 0.2);
+                color: $blue-color;
+            }
+
+            &.active {
+                background-color: $blue-color;
+                color: $white-color;
+                border-color: $blue-color;
+            }
+        }
+    }
+
+    &__footer {
+        padding: 15px 50px 20px;
+    }
+}
+
+.custom-switch {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(149, 149, 149, 0.1);
+    padding: 0 45px 0 60px;
+
+    &-input {
+        display: none;
+
+        &:focus, &:active {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    &-input:checked {
+        & + .custom-switch-label:after {
+            transform: none !important;
+            right: 3px;
+        }
+
+        & + .custom-switch-label:before {
+            background: $blue-color;
+            border-color: $blue-color !important;
+        }
+    }
+
+    &-label {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+        padding: 10px 0;
+        @extend %text14;
+        color: $dark-gray;
+        box-sizing: border-box;
+        margin-bottom: 0;
+
+        &:before {
+            @include before;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0;
+            left: auto;
+            width: 48px;
+            height: 27px;
+            border-radius: 50px;
+            background-color: #E5E5E5;
+            border-color: #E5E5E5 !important;
+            box-shadow: none !important;
+        }
+
+        &:after {
+            @include before;
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: auto;
+            right: 25px;
+            transform: none !important;
+            transition: all 0.25s;
+            background-color: $white-color;
+        }
+
+        span {
+            display:block;
+            max-width: calc(100% - 50px);
+        }
+    }
+}

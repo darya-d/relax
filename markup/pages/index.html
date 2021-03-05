@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head head.defaults}}
+</head>
+
+<body>
+%=symbols=%
+
+<ul>
+    <li><a href="login.html">вход/регистрация</a></li>
+    <li><a href="password.html">пароль</a></li>
+    <li><a href="photoreports.html">фотоотчеты</a></li>
+    <li><a href="sale.html">акции</a></li>
+    <li><a href="poster-cat.html">категория афиш</a></li>
+    <li><a href="poster.html">Афиша</a></li>
+
+    /**/
+    <li><a href="profile.html">профиль</a></li>
+    <li><a href="main.html">main page</a></li>
+    <li><a href="categories.html">категории</a></li>
+    <li><a href="card.html">карточка организации</a></li>
+</ul>
+
+<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
+
+<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>
